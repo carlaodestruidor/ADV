@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacia Carlos e Makelli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Advocacia Carlos Meyer</h1>
+    <p>Defendendo seus direitos com excelência e ética.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Como ler a Constituição</h2>
+      <p>
+        A Constituição deve ser lida com atenção aos seus princípios fundamentais, que se encontram logo nos primeiros artigos.
+        Comece pelo preâmbulo e siga os títulos em ordem. É importante entender o contexto histórico e a hierarquia das normas.
+        Utilize comentários de juristas e doutrinas como apoio e consulte jurisprudências para aplicação prática.
+      </p>
+      <button onclick="mostrarDica()">Clique para uma dica rápida!</button>
+      <p id="dica" style="display: none; margin-top: 10px;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Advocacia Carlos Meyer  | Justiça com propósito</p>
+    <p>"Onde há justiça, há esperança."</p>
+  </footer>
+
+  <script>
+    function mostrarDica() {
+      const dica = document.getElementById("dica");
+      const dicas = [
+        "Leia os princípios fundamentais com calma — eles guiam toda a Constituição.",
+        "Use uma Constituição anotada para entender melhor os artigos.",
+        "Compare artigos com casos reais — isso ajuda na fixação.",
+        "A leitura em grupo ou com um mentor jurídico pode ser muito mais proveitosa."
+      ];
+      const aleatoria = dicas[Math.floor(Math.random() * dicas.length)];
+      dica.textContent = aleatoria;
+      dica.style.display = "block";
+    }
+  </script>
+</body>
+</html>
